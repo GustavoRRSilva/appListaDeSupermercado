@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>App Supermercado</title>
+  </head>
+  <body>
+    <header>
+      <h1>App Lista de Supermercado</h1>
+      <label for="filtro">Filtro:</label>
+      <input type="text" name="Filtro" id="filtro" class="filtro" />
+    </header>
+    <div class="lista">
+      <input
+        type="text"
+        name="nome_produto"
+        id="nome_produto"
+        placeholder="nome do produto..."
+      />
+      <input
+        type="text"
+        name="valor_produto"
+        id="valor_produto"
+        placeholder="valor do produto..."
+      />
+      <input type="submit" value="Cadastrar" />
+    </div>
+    <div class="lista-produtos">
+      <div class="lista-produtos-single">
+        <h3 class="nomeProduto">RedBull</h3>
+        <h3 class="precoProduto">R$<span class="valorUnit">20.00</span></h3>
+      </div>
+      <div class="lista-produtos">
+        <div class="lista-produtos-single">
+          <h3 class="nomeProduto">RedBull</h3>
+          <h3 class="precoProduto">R$<span class="valorUnit">20.00</span></h3>
+        </div>
+      </div>
+      <div class="lista-produtos">
+        <div class="lista-produtos-single">
+          <h3 class="nomeProduto">RedBull</h3>
+          <h3 class="precoProduto">R$<span class="valorUnit">20.00</span></h3>
+        </div>
+      </div>
+      <div class="lista-produtos">
+        <div class="lista-produtos-single">
+          <h3 class="nomeProduto">RedBull</h3>
+          <h3 class="precoProduto">R$<span class="valorUnit">20.00</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="precoTotal">
+      <h2 class="precoTotal">
+        O preço total foi de:R$ <span class="valorTotal"></span>
+      </h2>
+    </div>
+    <script src="script.js"></script>
+    <script src="filtro.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    font-weight: bold;
+    background-color: #5a71bb;
+    color: white;
+    padding: 20px 0;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.lista input[type = text]{
+    flex: 1;
+    height: 40px;
+    padding-left: 20px;
+}
+.lista-produtos-single{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+.lista-produtos-single h3{
+    flex: 1;
+}
+.precoProduto{
+font-size: 0.9em;
+align-self: center;
+}
+.precoProduto span{
+    background-color: #5a71bb;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+.filtro{
+    padding: 4px;
+    border-radius: 5px;
+    border-color: black;
+    outline: none;
+}

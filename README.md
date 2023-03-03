@@ -1,6 +1,5 @@
-![Imagem Do App](https://imgur.com/a/kuPLjhj)
-# Resumo do projeto
-Projeto feito com o objetivo de criar uma mini-lista de supermercado com Nome e valor dos itens, adicionando ainda o total da compra
+![imgApp](https://user-images.githubusercontent.com/108638526/222594206-c188a658-68d2-4d20-9fcc-6c9fd6806e84.png)
+
 
 ## 🔨 Funcionalidades do projeto
 
@@ -17,5 +16,5 @@ Projeto feito com o objetivo de criar uma mini-lista de supermercado com Nome e 
 
 ## Status 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%FINALIZADO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=GREEN&style=for-the-badge"/>
 </p>

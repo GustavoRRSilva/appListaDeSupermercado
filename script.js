@@ -2,17 +2,20 @@ let produtos = document.querySelectorAll(".lista-produtos-single");
 document.querySelectorAll(".valorUnit").forEach((element) => {
   valorTotal(element.innerHTML, true);
 });
-
 produtos.forEach((element) => {
-  element.addEventListener("click", () => {
-    let valorDoProduto = element.querySelector(".valorUnit").innerHTML;
-    valorTotal(Number(valorDoProduto), false);
-    element.remove();
-  });
+  removerItem(element);
 });
 
-let items = [];
+function removerItem(item) {
+  console.log(item);
+  item.addEventListener("click", () => {
+    let valorDoProduto = item.querySelector(".valorUnit").innerHTML;
+    valorTotal(Number(valorDoProduto), false);
+    item.remove();
+  });
+}
 
+let items = [];
 let enviar = document.querySelector("input[type = submit]");
 enviar.addEventListener("click", () => {
   let nome = document.querySelector("input[name=nome_produto]").value;
@@ -30,7 +33,7 @@ enviar.addEventListener("click", () => {
 });
 
 function valorTotal(valorNovo, soma) {
-  console.log(soma);
+  console.log(valorNovo);
   let valorTotal = document.querySelector(".valorTotal");
   if (soma) {
     valorTotal.innerHTML = Number(valorTotal.innerHTML) + Number(valorNovo);
@@ -46,4 +49,5 @@ function adicionaNoDom(itens) {
     items[items.length - 1].valorProduto
   }</span></h3>
 </div>`;
+  removerItem(itens.lastChild);
 }
